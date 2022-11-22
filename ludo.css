@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+   
+}
+.grid-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.ludo{
+    border: 0.5px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid blue;
+    background-color: blue;
+    grid-column: 1/7;
+    grid-row: 1/7;
+}
+.bluecol{
+    border: 0.5px solid blue;
+    background-color: blue;
+}
+.player{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.play{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+.step{
+    border: 0.5px solid black;
+}
+.centerbox{
+    grid-column: 7/10;
+    grid-row: 7/10;
+    width: 0;
+    height: 0;
+    border-top:60px solid red ;
+    border-left:60px solid blue ;
+    border-right:60px solid yellow ;
+    border-bottom:60px solid green;
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  0.5px solid red;
+    background-color: red; 
+    grid-column: 10/16;
+    grid-row: 1/7;
+}
+.redcol{
+    border:  0.5px solid red;
+    background-color: red; 
+}
+.green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  0.5px solid green;
+    background-color: green;
+    grid-column: 1/7;
+    grid-row: 10/16; 
+}
+.greencol{
+    border:  0.5px solid green;
+    background-color: green;
+}
+.yellow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  0.5px solid yellow;
+    background-color: yellow; 
+    grid-column: 10/16;
+    grid-row: 10/16;
+}
+.yellowcol{
+    border:  0.5px solid yellow;
+    background-color: yellow; 
+}
